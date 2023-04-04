@@ -108,6 +108,7 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #1C1C1C;
+    transition: color .3s ease-in-out;
 }
 
 .header-link:focus {
@@ -128,6 +129,7 @@ body {
     height: 2px;
     background-color: #3474BA;
     opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
 .header-link:active {
@@ -173,6 +175,7 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: background-color .3s ease-in-out;
 }
 
 .btn::after {
@@ -186,6 +189,7 @@ body {
     border: 1px solid #71A7E2;
     outline: none;
     opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
 .btn:focus::after {
@@ -284,6 +288,7 @@ body {
     width: 270px;
     border: 1px solid #E4E4E4;
     border-radius: 5px;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .services-item:hover {
@@ -298,6 +303,7 @@ body {
 .services-item-icon {
     margin-bottom: 25px;
     fill: #3172B9;
+    transition: fill .3s ease-in-out;
 }
 
 .services-item:hover .services-item-icon {
@@ -312,6 +318,7 @@ body {
     line-height: 130%;
     text-align: center;
     color: #1C1C1C;
+    transition: color .3s ease-in-out;
 }
 
 .services-item:hover .services-item-title {
@@ -325,6 +332,7 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #787878;
+    transition: color .3s ease-in-out;
 }
 
 .services-item:hover .services-item-descr {
@@ -356,6 +364,7 @@ body {
     display: flex;
     position: relative;
     width: 100%;
+    transition: background-color .3s ease-in-out;
 }
 
 .blog-preview-link:focus {
@@ -421,6 +430,7 @@ body {
     font-size: 10px;
     line-height: 150%;
     color: #787878;
+    transition: color .3s ease-in-out;
 }
 
 .blog-preview-title {
@@ -430,6 +440,7 @@ body {
     font-size: 20px;
     line-height: 130%;
     color: #1C1C1C;
+    transition: color .3s ease-in-out;
 }
 
 .blog-preview-dscr {
@@ -439,6 +450,7 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #787878;
+    transition: color .3s ease-in-out;
 }
 
 /* clients */
@@ -558,6 +570,7 @@ body {
     line-height: 180%;
     color: #787878;
     width: fit-content;
+    transition: color .3s ease-in-out;
 }
 
 .contacts-item-link:focus {
@@ -611,6 +624,7 @@ body {
     border: 1px solid #DADADA;
     border-radius: 50px;
     padding: 16px 28px;
+    transition: border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .form-input:not(:last-of-type) {
@@ -638,6 +652,7 @@ body {
     border: 1px solid #DADADA;
     border-radius: 50px;
     padding: 16px 24px 16px 28px;
+    transition: border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .form-select:focus {
@@ -662,6 +677,7 @@ body {
     resize: none;
     width: 100%;
     height: 100%;
+    transition: border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .form-textarea:focus {
@@ -747,6 +763,37 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #787878;
+    transition: color .3s ease-in-out;
+}
+
+.footer-link:focus {
+    outline-offset: 2px;
+    outline: 1px solid #71A7E2;
+}
+
+.footer-link:hover {
+    color: #71A7E2;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3474BA;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.footer-link:active {
+    color: #3474BA;
+    outline: none;
+}
+
+.footer-link:active::after {
+    opacity: 1;
 }
 
 .footer-nav {
@@ -759,6 +806,7 @@ body {
     height: 24px;
     align-items: center;
     justify-items: center;
+    transition: color .3s ease-in-out, stroke .3s ease-in-out;
 }
 
 .social-item:not(:last-child) {
